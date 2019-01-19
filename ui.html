@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+        <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+    </head>
+    <body>
+        <div id="A" style="width:100px;height:100px;background:lightYellow;padding:5px">
+
+
+        </div>
+        <script>
+            $(function() {
+            $("#A").mousedown(function() { $("#A").append("A down<br>") })
+            $("#A").mouseup(function() { $("#A").append("A up<br>") })
+            $("#A").click(function() { $("#A").append("A clicked<br>") })
+            $("#A").dblclick(function() { $("#A").append("A double-clicked<br>")
+            })
+            })
+        </script>
+    </body>
+</html>
